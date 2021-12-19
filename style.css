@@ -1,0 +1,97 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d1d8e0;
+}
+
+.navBar {
+  height: 100%;
+  width: 0;
+  background-color: #1B1464;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  padding-top: 60px;
+  transition: 0.3s;
+  z-index: 1;
+}
+
+.navBar a {
+ display: block;
+ padding: 8px 8px 8px 32px;
+ text-decoration: none; 
+ font-size: 25px;
+ color: #f1f1f1;
+ transition: 0.3s;
+}
+
+.navBar a:hover {
+  color: #818181;
+  padding-left: 34px;
+}
+
+.navBar .respCrossIcon {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 35px;
+  color: #f1f1f1;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: 0.3s;
+}
+
+.respCrossIcon:hover {
+  color: #f1f1f1;
+  background-color: #e74c3c;
+}
+
+.headingPara {
+  padding: 2rem 5rem;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.respIcon {
+  position: absolute;
+  top: 10px;
+  right: 16rem;
+  font-size: large;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.headingPara h1 {
+  margin: 1rem 0;
+  color: #f53b57;
+}
+
+.forDesktopDesign {
+  margin-left: 250px;
+  opacity: 0.5;
+}
+
+
+@media only screen and (max-width:750px) {
+
+  .forMobileDesign {
+    margin-left: 0;
+    opacity: 0.5;
+  }
+
+  .headingPara h1 {
+    font-size: 20px;
+  }
+
+  .headingPara p {
+    padding: 0.5rem 1rem;
+  }
+  
+}
